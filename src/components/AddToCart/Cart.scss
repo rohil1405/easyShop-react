@@ -1,0 +1,111 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  margin: 100px 0;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cart-table {
+    width: 80%;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        background-color: rgb(123, 24, 159, 0.9);
+        color: #FFF;
+        font-weight: 300;
+        font-size: 16px;
+
+        th {
+          padding: 10px;
+          text-align: center;
+          border-bottom: 2px solid #ddd;
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid #ddd;
+          background-color: black;
+          color: #FFF;
+          font-weight: 600;
+          font-size: 16px;
+
+          td {
+            padding: 10px;
+            text-align: center;
+
+            button,
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .cart-item-image {
+          width: 120px;
+          height: auto;
+        }
+      }
+    }
+
+    button {
+      padding: 5px 10px;
+      margin: 0 5px;
+      border: none;
+      background-color: #7B189F;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .cta-btn {
+      display: flex;
+      justify-content: end;
+
+      button {
+        padding: 15px 10px;
+        border: none;
+        background-color: #7B189F;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  button {
+    color: #7B189F;
+    background-color: #FFF;
+    border: 1px solid #7B189F;
+    padding: 8px 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 21%;
+  }
+}

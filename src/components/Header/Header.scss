@@ -1,0 +1,188 @@
+.hero-header {
+  padding-top: 10px;
+
+  .hero-header-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      height: 1.875rem;
+      width: 1.875rem;
+    }
+
+    img {
+      height: 1.875rem;
+      width: 1.875rem;
+    }
+
+    .header-menu {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+
+    .header-wrap {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+
+      // .sign-click {
+      //     display: none;
+      //     position: absolute;
+      //     top: 104%; 
+      //     width: 150px; 
+      //     background: white;
+      //     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      //     transition: max-height 0.3s ease, opacity 0.3s ease;
+      //     overflow: hidden;
+      //     padding: 24px;
+      //     text-align: center;
+
+      //     .sign-header {
+      //         button {
+      //             border-radius: 18px;
+      //             padding: 15px 40px;
+      //             background-color: #7B189F;
+      //             color: #FFFFFF;
+      //             font-size: 18px;
+      //             font-weight: 600;
+      //             letter-spacing: 1.1px;
+      //             border: none;
+      //             font-size: 18px;
+      //         }
+
+      //         p {
+      //           font-size: 18px;
+      //             border-bottom: 3px solid #7B189F;
+      //         }
+      //     }
+
+      //     .sign-order {
+      //         .sign-list {
+      //             display: flex;
+      //             align-items: center;
+      //             gap: 10px;
+      //             padding: 6px 0;
+      //             font-size: 18px;
+      //             font-weight: 400;
+      //         }
+      //     }
+      //   }
+      //   .header-logos:hover .sign-click {
+      //     display: flex;
+      //     flex-wrap: wrap;
+      //     gap: 12px;
+      //     max-height: 275px; 
+      //   }
+      .header-logos {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .header-profile,
+    .header-logos {
+      a {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        text-decoration: none;
+
+        span {
+          color: #333;
+        }
+      }
+    }
+
+    .header-cart {
+      position: relative;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding-right: 5px;
+
+      img {
+        height: 1.875rem;
+        width: 1.875rem;
+      }
+
+      .cart-count {
+        background-color: #7B189F;
+        width: 30px;
+        height: 30px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -34%;
+        left: 60%;
+      }
+    }
+  }
+
+  .search-product {
+    padding: 10px 0;
+  }
+}
+
+.hero-header {
+  position: relative;
+}
+
+.header-menu {
+  cursor: pointer;
+}
+
+.menu-popup {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+}
+
+.menu-popup.open {
+  display: block;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.category-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
